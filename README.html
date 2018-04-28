@@ -123,17 +123,14 @@ $(document).ready(function () {
 
 <div id="ps239t-final-project" class="section level1">
 <h1>PS239T Final Project</h1>
-</div>
-<div id="university-of-california-berkeley" class="section level1">
-<h1>University of California Berkeley</h1>
-<div id="carla-de-paiva-bezerra" class="section level3">
-<h3>Carla de Paiva Bezerra</h3>
+<div id="carla-de-paiva-bezerra" class="section level2">
+<h2>Carla de Paiva Bezerra</h2>
 </div>
 <div id="short-description" class="section level2">
 <h2>1. Short Description</h2>
-<p>My proposal is to replicate and improve the model of Spada (2014), in which he aims to explain the causal mechanisms for the initial diffusion and later abandonment of the Participatory Budgeting (PB) in Brazil. He has produced an original PB Census for 1989-2012 and further developed a panel data analysis, testing the effects of variables such as: geographical proximity to other cities with PB, the availability of resources, and the political features and vulnerability of the local government.</p>
-<p>I argue that the most important factor is not fiscal balance, but fiscal rigidity and local discretionarity. Even within a balanced budget, a local government may have little room to manage its investment budget (the only part of the budget that is actually discussed in PB assemblies). His model disregards the fiscal regulations of the Brazilian federation and the significant growth of binding local expenditures in Brazilian municipalities in the last two decades. I propose to include in the analysis other fiscal variables for fiscal rigidity and local discretionarity.</p>
-<p>Give a short, 1-2 paragraph description of your project. Focus on the code, not the theoretical / substantive / academic side of things.</p>
+<p>This is the PS239T Final Project Repo (Introduction To Computational Tools And Techniques For Social Research, at the Department of Political Science, University of California, Berkeley).</p>
+<p>The initial proposal was to replicate and improve the model of Spada (2014), in which he aims to explain the causal mechanisms for the initial diffusion and later abandonment of the Participatory Budgeting (PB) in Brazil.</p>
+<p>For the project I was able to rebuild most of the dataset used (01_organize_data1.R and 02_organize_data2.R), as well as to make some basic descriptive analysis of the dataset (03_analysis_descriptive.R). For the main goal, which was to replicate the regression, I only began to specify the model, but it still need further adjustments.</p>
 </div>
 <div id="dependencies" class="section level2">
 <h2>2. Dependencies</h2>
@@ -145,39 +142,53 @@ $(document).ready(function () {
 <h2>3. Files</h2>
 <div id="data" class="section level3">
 <h3>3.1. Data</h3>
+<p>A. Raw Data</p>
 <ol style="list-style-type: decimal">
-<li><p>“Full PB Census 1989 to 2012.xls”: Spada, P. 2012. “Brazilian Participatory Budgeting Census: 1989-2012.” Available at: <a href="http://participedia.net/en/content/brazilian-participatory-budgeting-census" class="uri">http://participedia.net/en/content/brazilian-participatory-budgeting-census</a> / Access date: April 20, 2018. (licensed under CC BY-NC-SA 3.0).</p></li>
-<li><p>Cepespdata API (folder): <a href="https://github.com/Cepesp-Fgv/cepesp-r" class="uri">https://github.com/Cepesp-Fgv/cepesp-r</a> <a href="http://cepesp.io/" class="uri">http://cepesp.io/</a> Cleaned, organized and documented access to the Brazilian Electoral Superior Court data on elections in Brazil from 1998 to 2016.</p></li>
-<li><p>FINBRA (folder): <a href="http://www.tesouro.fazenda.gov.br/pt_PT/contas-anuais" class="uri">http://www.tesouro.fazenda.gov.br/pt_PT/contas-anuais</a> Offical Accounting Data for Brazilian Municipalities (1989-2012). Downloaded anually. Accesse files were convereted to csv.</p></li>
-<li><p>IPEADATA: <a href="http://www.ipeadata.gov.br" class="uri">http://www.ipeadata.gov.br</a> A portal of the Brazilian Government Institute for Applied Economics, that puts together several data sources of the Brazilian Governement. The data is downloaded.</p></li>
-<li>FINALDATASET.csv: Final analysis dataset derived from the raw data above. It includes muncipality-year values for all Brazilian municipalities above 50.0000 inhabintants, with observations for the following variables:
-<ul>
-<li><em>ccode</em>: Correlates of War numeric code for country observation</li>
-<li><em>year</em>: Year of observation</li>
-<li><em>polity</em>: PolityVI score</li>
-<li><em>nyt</em>: Number of New York Times articles about “Programmer Cat”</li>
-</ul></li>
+<li><p>Spada, P. 2012. “Brazilian Participatory Budgeting Census: 1989-2012.” Available at: <a href="http://participedia.net/en/content/brazilian-participatory-budgeting-census" class="uri">http://participedia.net/en/content/brazilian-participatory-budgeting-census</a> / Access date: April 20, 2018. (licensed under CC BY-NC-SA 3.0). 00_Spada_05112017_PB CENSUS 2016.xlsx 01_Participedia_Spada_PBcensus1989-2012.xlsx</p></li>
+<li>IPEADATA: <a href="http://www.ipeadata.gov.br" class="uri">http://www.ipeadata.gov.br</a> A portal of the Brazilian Government Institute for Applied Economics Research, that puts together several data sources of the Brazilian Governement. The data is downloaded. We accessed the following sources:</li>
 </ol>
+<ul>
+<li>TSE: organized and documented access to the Brazilian Electoral Superior Court data on elections in Brazil from 1998 to 2016.</li>
+<li>MPF/STN: Offical Accounting Data for Brazilian Municipalities (1989-2012). Downloaded anually. Accesse files were convereted to csv.</li>
+<li>IBGE: Brazilian Institute of Geography and Statistics. For demographic variables. 02_IPEA_IBGE_ latitude_longitude1998.xls 03_IPEA_IBGE_PopulacaoMunic_1992-2017.xls 04_IPEA_IBGE_PIBMunic_1996-2017.xls 05_IPEA_TSE_Mayor1996.xls 06_IPEA_TSE_Mayor2000.xls 07_IPEA_TSE_Mayor2004.xls 08_IPEA_TSE_Mayor2008.xls 09_IPEA_STN_expenditures1995.xls 10_IPEA_STN_expenditures1996.xls 11_IPEA_STN_expenditures1999.xls 12_IPEA_STN_expenditures2000.xls 13_IPEA_STN_expenditures2003.xls 14_IPEA_STN_expenditures2004.xls 15_IPEA_STN_expenditures2007.xls 16_ IPEA_STN_expenditures2008.xls 17_IPEA_STN_expenditures2011.xls 18_IPEA_STN_revenues1995.xls 19_IPEA_STN_revenues1996.xls 20_IPEA_STN_revenues1999.xls 21_IPEA_STN_revenues2003.xls 22_IPEA_STN_revenues2004.xls 23_IPEA_STN_revenues2007.xls 24_IPEA_STN_revenues2008.xls 25_IPEA_STN_revenues2011.xls</li>
+</ul>
+<ol start="3" style="list-style-type: decimal">
+<li><p>SHAPE FILES: Brazilian States, Municipalities and Macroregions shape files. From Diogo Ferrari personal website: <a href="https://dioferrari.com/2014/11/27/plotting-maps-using-r-example-with-brazilian-municipal-level-data/" class="uri">https://dioferrari.com/2014/11/27/plotting-maps-using-r-example-with-brazilian-municipal-level-data/</a> regioes_2010.shx estados_2010.dbf estados_2010.prj estados_2010.qpj estados_2010.shp estados_2010.shx municipios_2010.dbf municipios_2010.prj municipios_2010.qpj municipios_2010.shp municipios_2010.shx regioes_2010.dbf regioes_2010.prj regioes_2010.qpj regioes_2010.shp</p></li>
+<li>FINALDATASET.csv: Four final analysis dataset derived from the raw data above. It includes muncipality-year values for all Brazilian municipalities above 50.0000 inhabintants. The variables are detailes in the “variables.txt”.</li>
+</ol>
+<ul>
+<li>01_Mayor1996-2008.csv</li>
+<li>02_Balance1995-2011.csv</li>
+<li>03_PBDemographics.csv</li>
+<li>04_PBfinal.csv</li>
+</ul>
 </div>
 <div id="code" class="section level3">
 <h3>3.2. Code</h3>
-<ol style="list-style-type: decimal">
-<li>01_collect-nyt.py: Collects data from New York Times API and exports data to the file nyt.csv</li>
-<li>02_merge-data.R: Loads, cleans, and merges the raw Polity and NYT datasets into the Analysis Dataset.</li>
-<li>03_analysis.R: Conducts descriptive analysis of the data, producing the tables and visualizations found in the Results directory.</li>
-</ol>
+<ul>
+<li>01_organize_data1.R</li>
+<li>02_organize_data2.R</li>
+<li>03_analysis_descriptive.R</li>
+<li>04_regression.R</li>
+<li>Regression_variables.txt</li>
+</ul>
 </div>
 <div id="results" class="section level3">
 <h3>4. Results</h3>
-<ol style="list-style-type: decimal">
-<li>coverage-over-time.jpeg: Graphs the number of articles about each region over time.</li>
-<li>regression-table.txt: Summarizes the results of OLS regression, modelling <em>nyt</em> on a number of covariates.</li>
-</ol>
+<p>-01PBperyear.png: Participatory Budgeting (PB) evolution in Brazil per year.</p>
+<p>-02PBparty.jpeg: PB evolution in Brazil per party and year.</p>
+<p>-03PBgeodistrib.jpeg: PB geodistribution in Brazil per party and year.</p>
+<p>-04PBpop.jpeg: Population distribution of municipalities adopting PB per year.</p>
+<p>-05PBInvestment.jpeg: Budget Investment rateof municiplaities adopting PB per year.</p>
+<p>-Barplotcatpop: Population distribution of whole sample (categorical).</p>
+<p>-hist1.jpeg: Histogram of the ratio of current over total budget expenditures (whole sample).</p>
+<p>-hist2.jpeg: Histogram of the ratio of capital investment over total budget expenditures (whole sample).</p>
+<p>-hist3.jpeg: Histogram of the tax share of revenues (whole sample).</p>
+<p>-hist4.jpeg: Histogram of the transfer share of revenues (whole sample).</p>
 </div>
+<div id="section" class="section level3">
+<h3></h3>
 </div>
-<div id="more-information" class="section level2">
-<h2>5. More Information</h2>
-<p>Please check <a href="https://github.com/Murilojunqueira/FinancasParticipacao2018" class="uri">https://github.com/Murilojunqueira/FinancasParticipacao2018</a> for further information on Data and Code indicated as authored by “Murilo Junqueira”. Comments and notes of such codes are in portuguese.</p>
 </div>
 </div>
 

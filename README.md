@@ -96,16 +96,25 @@ regioes_2010.shp
 ### 4. Results
 
 -01PBperyear.png: Participatory Budgeting (PB) evolution in Brazil per year.
+
 -02PBparty.jpeg: PB evolution in Brazil per party and year.
+
 -03PBgeodistrib.jpeg: PB geodistribution in Brazil per party and year.
+
 -04PBpop.jpeg: Population distribution of municipalities adopting PB per year. 
+
 -05PBInvestment.jpeg: Budget Investment rateof municiplaities adopting PB per year.
+
 -Barplotcatpop: Population distribution of whole sample (categorical). 
+
 -hist1.jpeg: Histogram of the ratio of current over total budget expenditures (whole sample).
+
 -hist2.jpeg: Histogram of the ratio of capital investment over total budget expenditures (whole sample).
+
 -hist3.jpeg: Histogram of the tax share of revenues (whole sample).
+
 -hist4.jpeg: Histogram of the transfer share of revenues (whole sample).
 
 
-
+###
 
