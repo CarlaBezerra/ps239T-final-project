@@ -1,0 +1,40 @@
+Munic	Municipality name
+codeipea	Official IBGE code for the municipality
+year	Year (the reference for the four year term is always the beginning of the electoral term)
+state	State Acronym
+PB	Participatory Budgeting occurrence (dummy)
+Longitude	Longitude
+Latitude	Latitude
+population	Population
+gdp	Gross Domestic Product
+Party_MostVoted1r	Party of the candidate with the most votes in the first round
+Party_2ndVoted1r	Party of the second candidate with the most votes in the first round
+Votes_MostVoted1r	Vote of the most voted candidate in the first round
+Votes_2ndVoted1r	Vote of the second candidate with the most votes in the first round
+Party_MostVoted2r	Party of the most voted candidate in the second round
+Party_2ndVoted2r	Party of the second most voted candidate in the second round
+Votes_MostVoted2r	Vote of the most voted mayor candidate in the second round
+Votes_2ndVoted2r	Vote of the second most voted candidate in the second round
+NCandidatesMayor	Number of Nominees - Mayor
+NPartiesMayor	Number of parties voted - mayor
+refyear	For accounting information, the actual year of the measured data
+Budget.Revenue	Budget revenue - municipal (1995)
+Other.Current_Revenue	Current Revenue - Other - Municipal (1995)
+Current.Revenue	Current revenue - municipal (1995)
+AllTax.Revenue	Tax revenue - municipal (1995)
+Capital.Revenue	Revenue from capital - municipal (1995)
+Other.Capital.Revenue	Capital Revenues - Other - Municipal (1995)
+TaxImposto.Revenue	Tax revenue - taxes - municipal (1995)
+CredOperation.Capital.Revenue	Receipt of capital - credit operations - municipal (1995)
+Current.Trasnfers.Revenue	Revenue - current - municipal (1995)
+Capital.Trasnfers.Revenue	Revenue - transfers of capital - municipal (1995)
+Other.Current.Expenditures	Current expenditure - other - municipal (1995)
+Current.Expenditures	Current expenditure - municipal (1995)
+Other.Defrayal.Current.Expenditures	Expense of costing - other - municipal (1995)
+Personnel.Defrayal.Current.Expenditures	Defrayal expeditures - personnel - municipal (1995)
+Defrayal.Current.EXpenditures	Defrayal expeditures - municipal (1995)
+Capital.Expenditures	Capital expenditure - municipal (1995)
+Budget.Expenditures	Budget expenditure - municipal (1995)
+Invest.Capital.Expenditures	Capital expenditure - investment - municipal (1995)
+Current.Trasnfers.Expenditures	Expenditure - current transfers - municipal (1995)
+Capital.Current.Trasnfers.Expenditures	Expenditure - transfers of capital - municipal (1995)

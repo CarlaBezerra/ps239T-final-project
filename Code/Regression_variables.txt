@@ -1,0 +1,66 @@
+Regression Model Variables
+
+
+#Identifying the variables
+# There is no detailed description or code of how each variable was created. So I tried to fit as much as possible the description given in the article with the legend of the variables in the original Spada dataset ("Spadadata.dta").
+
+#For my own new dataset ("PBfinal.csv"), I will not be #able to recreate all variables, specially those related #to city councillors (data was not collected) and some #distance variables, that I'm still studying on how to #calculate.
+
+#Dependent variable
+
+table (data$pb)
+
+### A. Political Variables (POL)
+
+##h1 PT presence
+
+table (data$ptwin)
+
+#considered using ptpow (city council seats controled by the PT, but there might be double count in the governement vulnerability variables)
+
+## h2 Proximity variables
+
+summary(data$mindistno0)
+
+#peerparty missing. I still have to figure out how to make such calculus.
+
+#Spada's description: measure geographical proximity as #the Euclidean distance to the closest city implementing #participatory budgeting in the previous time period, #and peer proximity as a party-network effect. we employ #two alternative measures of party peer effect that #combine ideology and imitation. In the first one a city #is considered to have a peer that has adopted PB if a #city controlled by the same party adopted PB in the #previoustime period. In the second one a weight equal #to the number of cities adopting PB by each party is #applied to the previous dummy variable.
+
+## h3 Economical Variables (ECON)
+
+taxrevenues
+financialviability <- data$totexp/data$balsheetrev
+
+##Our hypothesis for h3
+
+data$kapitalrev #total expenditures
+capitalinvexp	#capital investment expenditures
+
+capitalratio <- data$capitalinvexp/data$totexp
+
+#Spada's description: (tax share of revenues), 
+#and the effect of the city's financial viability (ratio of expenditures and revenues)
+
+
+#Main doubts about the variables:
+# Are all economic variable adjusted for inflation? #Which is the base year? (this is information is #available only for gdp, which uses 2000 as base).
+#After checking the source data ate IPEA data, this #remains unclear to me.
+
+## h4 Government Vulnerability
+
+mayorvulnerability <- data$secbestprefeitovote_st/data$votiprefsec #Ratio runnerup/winner votes
+legprefpower	#(percentage of city council seats controlled by the mayors party)
+continuitypref
+continuitypartpref
+
+#Spada's description:
+# a) the mayor's party vulnerability (ratio of runner-up votes over mayor's party votes), 
+# b) the mayor's party control over the city council (mayor's party shares of seats in the chamber and dummy that identifies if the party of the mayor holds the majority seats), #couln't identify the dummy
+# d) continuity of the city government (candidate?).
+# e) continuity of the party
+
+
+## PERIOD
+
+#Author's description: PERIOD is a matrix containing period dummies that capture the effect of time
+
