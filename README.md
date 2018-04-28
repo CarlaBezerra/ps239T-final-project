@@ -4,11 +4,11 @@
 
 ## 1. Short Description
 
-This is are the results presented for the PS239T Final Project (Introduction To Computational Tools And Techniques For Social Research, at the Department of Political Science, University of California, Berkeley).
+This is the PS239T Final Project Repo (Introduction To Computational Tools And Techniques For Social Research, at the Department of Political Science, University of California, Berkeley).
 
 The initial proposal was to replicate and improve the model of Spada (2014), in which he aims to explain the causal mechanisms for the initial diffusion and later abandonment of the Participatory Budgeting (PB) in Brazil. 
 
-For the project I was able to rebuild most of the dataset used (01_organize_data1.R and 02_organize_data2.R), as well as to make some basic descriptive analysis of the dataset (03_analysis_descriptive.R). For the main goal, which was to actually run some regression, I began to specify the model,
+For the project I was able to rebuild most of the dataset used (01_organize_data1.R and 02_organize_data2.R), as well as to make some basic descriptive analysis of the dataset (03_analysis_descriptive.R). For the main goal, which was to replicate the regression, I only began to specify the model,
 but it still need further adjustments.
 
 
